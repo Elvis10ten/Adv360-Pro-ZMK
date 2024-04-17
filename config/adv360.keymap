@@ -13,6 +13,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -29,18 +30,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        hmr: hmr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 37 46 47 48 49 50 51 52 53 60 61 62 63 64 65 66 67 68 69 70 38>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-        };
     };
 
     keymap {
@@ -48,11 +37,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1          &kp N2              &kp N3              &kp N4            &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7             &kp N8               &kp N9               &kp N0                   &kp MINUS
-&kp TAB    &kp Q           &kp W               &kp E               &kp R             &kp T   &none                                                    &none      &kp Y   &kp U              &kp I                &kp O                &kp P                    &kp BSLH
-&kp ESC    &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_COMMAND D  &hm LEFT_SHIFT F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_COMMAND K  &hm RIGHT_CONTROL L  &hm RIGHT_ALT SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z           &kp X               &kp C               &kp V             &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M              &kp COMMA            &kp DOT              &kp FSLH                 &kp RSHFT
-&mo 2      &kp GRAVE       &kp CAPS            &kp LEFT            &kp RIGHT                 &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN             &kp LBKT             &kp RBKT                 &mo 2
+&kp EQUAL  &kp N1          &kp N2              &kp N3              &kp N4            &kp N5  &tog 1                                                                 &mo 3      &kp N6  &kp N7             &kp N8               &kp N9               &kp N0                   &kp MINUS
+&kp TAB    &kp Q           &kp W               &kp E               &kp R             &kp T   &none                                                                  &none      &kp Y   &kp U              &kp I                &kp O                &kp P                    &kp BSLH
+&kp ESC    &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_COMMAND D  &hm LEFT_SHIFT F  &kp G   &none     &kp ESC         &mkp LCLK           &mkp RCLK     &kp TAB    &none      &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_COMMAND K  &hm RIGHT_CONTROL L  &hm RIGHT_ALT SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z           &kp X               &kp C               &kp V             &kp B                             &kp DOWN_ARROW      &kp UP_ARROW                        &kp N   &kp M              &kp COMMA            &kp DOT              &kp FSLH                 &kp RSHFT
+&mo 2      &kp GRAVE       &kp CAPS            &kp LEFT            &kp RIGHT                 &kp BSPC  &kp LEFT_SHIFT  &kp LEFT_ARROW      &kp DOWN      &kp ENTER  &kp SPACE          &kp UP             &kp DOWN             &kp LBKT             &kp RBKT                 &mo 2
             >;
         };
 
