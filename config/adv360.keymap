@@ -34,7 +34,7 @@
         up_scrollup: up_scrollup {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp UP_ARROW>, <&kp K_SCROLL_UP>;
+            bindings = <&kp UP_ARROW>, <&kp C_AC_SCROLL_UP>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
