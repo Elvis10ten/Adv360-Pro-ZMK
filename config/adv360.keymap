@@ -31,12 +31,21 @@
             bindings = <&kp>, <&kp>;
         };
 
-        bspc_del: backspace_delete {
+        up_scrollup: up_scrollup {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            bindings = <&kp UP_ARROW>, <&kp K_SCROLL_UP>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
+        };
+
+        down_scrolldown: down_scrolldown {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN>, <&kp K_SCROLL_DOWN>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "DOWN_SCROLLDOWN";
         };
     };
 
@@ -45,11 +54,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1          &kp N2              &kp N3              &kp N4            &kp N5  &tog 1                                                              &mo 3      &kp N6  &kp N7             &kp N8               &kp N9               &kp N0                   &kp MINUS
-&kp TAB    &kp Q           &kp W               &kp E               &kp R             &kp T   &none                                                               &none      &kp Y   &kp U              &kp I                &kp O                &kp P                    &kp BSLH
-&kp ESC    &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_COMMAND D  &hm LEFT_SHIFT F  &kp G   &none     &kp ESC         &mkp LCLK           &mkp RCLK  &kp TAB    &none      &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_COMMAND K  &hm RIGHT_CONTROL L  &hm RIGHT_ALT SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z           &kp X               &kp C               &kp V             &kp B                             &kp DOWN_ARROW      &gresc                           &kp N   &kp M              &kp COMMA            &kp DOT              &kp FSLH                 &kp RSHFT
-&mo 2      &kp GRAVE       &kp CAPS            &kp LEFT            &kp RIGHT                 &kp BSPC  &kp LEFT_SHIFT  &kp LEFT_ARROW      &kp DOWN   &kp ENTER  &kp SPACE          &kp UP             &kp DOWN             &kp LBKT             &kp RBKT                 &mo 2
+&kp EQUAL  &kp N1          &kp N2              &kp N3              &kp N4            &kp N5  &tog 1                                                                   &mo 3      &kp N6  &kp N7             &kp N8               &kp N9               &kp N0                   &kp MINUS
+&kp TAB    &kp Q           &kp W               &kp E               &kp R             &kp T   &none                                                                    &none      &kp Y   &kp U              &kp I                &kp O                &kp P                    &kp BSLH
+&kp ESC    &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_COMMAND D  &hm LEFT_SHIFT F  &kp G   &none     &kp ESC         &mkp LCLK             &mkp RCLK     &kp TAB    &none      &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_COMMAND K  &hm RIGHT_CONTROL L  &hm RIGHT_ALT SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z           &kp X               &kp C               &kp V             &kp B                             &down_scrolldown      &up_scrollup                        &kp N   &kp M              &kp COMMA            &kp DOT              &kp FSLH                 &kp RSHFT
+&mo 2      &kp GRAVE       &kp CAPS            &kp LEFT            &kp RIGHT                 &kp BSPC  &kp LEFT_SHIFT  &kp LEFT_ARROW        &kp RIGHT     &kp ENTER  &kp SPACE          &kp UP             &kp DOWN             &kp LBKT             &kp RBKT                 &mo 2
             >;
         };
 
