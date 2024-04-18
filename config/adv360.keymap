@@ -75,6 +75,7 @@
             key-positions = <65 70>;
             layers = <0>;
             require-prior-idle-ms = <100>;
+            timeout-ms = <500>;
         };
 
         show_all_apps {
