@@ -70,9 +70,14 @@
     combos {
         compatible = "zmk,combos";
 
-        all_windows {
+        show_all_windows {
             bindings = <&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS>;
             key-positions = <65 70>;
+        };
+
+        show_all_apps {
+            bindings = <&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS>;
+            key-positions = <66 69>;
         };
     };
 
