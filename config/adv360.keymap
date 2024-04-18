@@ -73,11 +73,14 @@
         show_all_windows {
             bindings = <&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS>;
             key-positions = <65 70>;
+            layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         show_all_apps {
             bindings = <&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS>;
             key-positions = <66 69>;
+            layers = <0>;
         };
     };
 
