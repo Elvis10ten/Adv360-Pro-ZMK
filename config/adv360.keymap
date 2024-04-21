@@ -13,7 +13,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -30,41 +29,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        up_pageup: up_scrollup {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp UP_ARROW>, <&kp RG(PAGE_UP)>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        down_pagedown: down_pagedown {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOWN>, <&kp RG(PAGE_DOWN)>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            label = "DOWN_PAGEDOWN";
-        };
-
-        left_home: left_home {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ARROW>, <&kp HOME>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            label = "LEFT_HOME";
-        };
-
-        right_end: right_end {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT>, <&kp END>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            label = "RIGHT_END";
-        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -74,11 +38,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1          &kp N2              &kp N3              &kp N4            &kp N5  &tog 1                                                               &mo 3      &kp N6  &kp N7             &kp N8               &kp N9               &kp N0                   &kp MINUS
-&kp TAB    &kp Q           &kp W               &kp E               &kp R             &kp T   &none                                                                &none      &kp Y   &kp U              &kp I                &kp O                &kp P                    &kp BSLH
-&kp ESC    &hm LEFT_ALT A  &hm LEFT_CONTROL S  &hm LEFT_COMMAND D  &hm LEFT_SHIFT F  &kp G   &none     &kp LEFT_SHIFT  &mkp LCLK           &mkp RCLK   &kp TAB    &none      &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_COMMAND K  &hm RIGHT_CONTROL L  &hm RIGHT_ALT SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z           &kp X               &kp C               &kp V             &kp B                             &left_home          &up_pageup                        &kp N   &kp M              &kp COMMA            &kp DOT              &kp FSLH                 &kp RSHFT
-&mo 2      &kp GRAVE       &kp CAPS            &kp LEFT            &kp RIGHT                 &kp BSPC  &kp ESCAPE      &down_pagedown      &right_end  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN             &kp LBKT             &kp RBKT                 &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                    &mo 3      &kp N6          &kp N7                   &kp N8               &kp N9             &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                     &none      &kp Y           &kp U                    &kp I                &kp O              &kp P          &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LEFT_GUI    &kp ESCAPE      &kp RIGHT_SHIFT  &kp RIGHT_GUI  &none      &mt KP_EQUAL H  &mt RIGHT_PARENTHESIS J  &mt RIGHT_BRACKET K  &mt RIGHT_BRACE L  &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                             &kp LALT        &kp RIGHT_ALT                              &kp N           &kp M                    &kp COMMA            &kp DOT            &kp FSLH       &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp LEFT_SHIFT  &kp LCTRL       &kp RCTRL        &kp ENTER      &kp SPACE                  &kp UP                   &kp DOWN             &kp LBKT           &kp RBKT       &mo 2
             >;
         };
 
