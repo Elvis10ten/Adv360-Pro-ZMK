@@ -34,6 +34,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&sk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <12>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -43,11 +52,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1         &kp N2            &kp N3              &kp N4                  &kp N5           &tog 1                                                                                                                &mo 3              &kp N6              &kp N7                   &kp N8               &kp N9             &kp N0         &kp MINUS
-&kp TAB    &kp Q          &kp W             &kp E               &kp R                   &kp T            &none                                                                                                                 &none              &kp Y               &kp U                    &kp I                &kp O              &kp P          &kp BSLH
-&kp ESC    &mt AT_SIGN A  &mt LEFT_BRACE S  &mt LEFT_BRACKET D  &mt LEFT_PARENTHESIS F  &mt LESS_THAN G  &none     &mt LA(BACKSPACE) BACKSPACE  &lt 1 TAB            &mt RIGHT_COMMAND ENTER  &mt RIGHT_SHIFT SPACE            &none              &mt GREATER_THAN H  &mt RIGHT_PARENTHESIS J  &mt RIGHT_BRACKET K  &mt RIGHT_BRACE L  &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z          &kp X             &kp C               &kp V                   &kp B                                                   &mt LALT ESCAPE      &mt RALT RG(TAB)                                                             &kp N               &kp M                    &kp COMMA            &kp DOT            &kp FSLH       &kp RSHFT
-&mo 2      &kp GRAVE      &kp CAPS          &kp LEFT            &kp RIGHT                                &kp LCMD  &mt LCTRL LEFT_SHIFT         &mo 2                &kp RC(RG(Q))            &mt RIGHT_CONTROL RG(BACKSPACE)  &kp RC(RG(SPACE))                      &kp UP                   &kp DOWN             &kp LBKT           &kp RBKT       &mo 2
+&kp EQUAL  &kp N1         &kp N2            &kp N3              &kp N4                  &kp N5           &tog 1                                                                                                      &mo 3              &kp N6              &kp N7                   &kp N8               &kp N9             &kp N0         &kp MINUS
+&kp TAB    &kp Q          &kp W             &kp E               &kp R                   &kp T            &sl 1                                                                                                       &sl 2              &kp Y               &kp U                    &kp I                &kp O              &kp P          &kp BSLH
+&kp ESC    &mt AT_SIGN A  &mt LEFT_BRACE S  &mt LEFT_BRACKET D  &mt LEFT_PARENTHESIS F  &mt LESS_THAN G  &kp LG(LC(Q))  &mt BACKSPACE LA(BACKSPACE)  &lt 1 RG(BACKSPACE)      &mt RGUI ENTER  &mt RIGHT_SHIFT SPACE  &kp RC(RG(SPACE))  &mt GREATER_THAN H  &mt RIGHT_PARENTHESIS J  &mt RIGHT_BRACKET K  &mt RIGHT_BRACE L  &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z          &kp X             &kp C               &kp V                   &kp B                                                        &mt LALT ESCAPE          &mt RCTRL TAB                                             &kp N               &kp M                    &kp COMMA            &kp DOT            &kp FSLH       &kp RSHFT
+&mo 2      &kp GRAVE      &kp CAPS          &kp LEFT            &kp RIGHT                                &kp LCTRL      &kp LALT                     &kp LGUI                 &kp RGUI        &kp RALT               &kp RCTRL                              &kp UP                   &kp DOWN             &kp LBKT           &kp RBKT       &mo 2
             >;
         };
 
