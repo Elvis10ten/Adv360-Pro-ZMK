@@ -54,7 +54,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        shortcat {
+            bindings = <&kp RG(BACKSPACE)>;
+            key-positions = <35 38>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
