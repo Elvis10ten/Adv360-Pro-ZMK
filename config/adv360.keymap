@@ -74,12 +74,12 @@
 
         back {
             bindings = <&kp RG(LEFT_BRACKET)>;
-            key-positions = <41 37>;
+            key-positions = <41 35>;
         };
 
         forward {
             bindings = <&kp RG(RIGHT_BRACKET)>;
-            key-positions = <43 37>;
+            key-positions = <43 35>;
         };
     };
 
