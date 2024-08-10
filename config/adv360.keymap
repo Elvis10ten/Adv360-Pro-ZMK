@@ -88,11 +88,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3  &kp N4  &kp N5  &tog 1                                                                                            &mo 3              &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
-&kp LCTRL  &kp Q      &kp W     &kp F   &kp P   &kp B   &sl 1                                                                                             &sl 2              &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &mt RCTRL BSLH
-&kp LALT   &kp A      &kp R     &kp S   &kp T   &kp G   &kp LG(LC(Q))  &mt LSHIFT LA(BACKSPACE)  &lt 1 ESCAPE      &mt RCMD ENTER  &mt RCMD SPACE         &kp RC(RG(SPACE))  &kp M   &kp N   &kp E      &kp I    &kp O          &mt RALT SQT
-&kp LSHFT  &kp Z      &kp X     &kp C   &kp D   &kp V                                            &mt LCMD TAB      &mt RALT GRAVE                                            &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-&trans     &kp GRAVE  &kp CAPS  &trans  &trans          &lt 1 ESCAPE   &kp BACKSPACE             &kp LCTRL         &kp RCTRL       &mt RIGHT_SHIFT SPACE  &mt RCMD ENTER             &trans  &trans     &trans   &trans         &trans
+&kp EQUAL  &kp N1     &kp N2    &kp N3  &kp N4  &kp N5  &tog 1                                                                                     &mo 3              &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &kp MINUS
+&kp LCTRL  &kp Q      &kp W     &kp F   &kp P   &kp B   &sl 1                                                                                      &sl 2              &kp J   &kp L   &kp U      &kp Y    &kp SEMICOLON  &mt RCTRL BSLH
+&kp LALT   &kp A      &kp R     &kp S   &kp T   &kp G   &kp LG(LC(Q))  &mt LSHIFT LA(BACKSPACE)  &lt 1 ESCAPE      &mt RCMD ENTER  &mt RCMD SPACE  &kp RC(RG(SPACE))  &kp M   &kp N   &kp E      &kp I    &kp O          &mt RALT SQT
+&kp LSHFT  &kp Z      &kp X     &kp C   &kp D   &kp V                                            &mt LCMD TAB      &mt RALT GRAVE                                     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+&trans     &kp GRAVE  &kp CAPS  &trans  &trans          &kp BACKSPACE  &lt 1 ESCAPE              &kp LCTRL         &kp RCTRL       &mt RCMD ENTER  &mt RSHIFT SPACE           &trans  &trans     &trans   &trans         &trans
             >;
         };
 
