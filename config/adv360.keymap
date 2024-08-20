@@ -133,7 +133,7 @@
 &trans     &kp Q                    &kp W                &kp F                    &kp P         &kp B   &sl 1                                                                            &sl 2              &kp J   &kp L          &kp U                      &kp Y                  &kp SEMICOLON              &kp BSLH
 &trans     &hm_left LEFT_CONTROL A  &hm_left LEFT_ALT R  &hm_left LEFT_COMMAND S  &hl_left 1 T  &kp G   &kp LG(LC(Q))                    &kp BACKSPACE  &trans      &trans  &kp TAB      &kp RC(RG(SPACE))  &kp M   &hl_right 1 N  &hm_right RIGHT_COMMAND E  &hm_right RIGHT_ALT I  &hm_right RIGHT_CONTROL O  &kp SQT
 &trans     &kp Z                    &kp X                &kp C                    &kp D         &kp V                                                   &trans      &trans                                  &kp K   &kp H          &kp COMMA                  &kp DOT                &kp FSLH                   &trans
-&trans     &kp GRAVE                &kp CAPS             &trans                   &trans                &favor_tap LEFT_SHIFT BACKSPACE  &lt 2 ESC      &trans      &trans  &lt 1 ENTER  &mt RSHIFT SPACE           &trans         &trans                     &trans                 &trans                     &trans
+&trans     &kp GRAVE                &kp CAPS             &trans                   &trans                &favor_tap LEFT_SHIFT BACKSPACE  &lt 2 ESC      &trans      &trans  &lt 2 ENTER  &mt RSHIFT SPACE           &trans         &trans                     &trans                 &trans                     &trans
             >;
         };
 
