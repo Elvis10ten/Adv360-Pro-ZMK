@@ -99,11 +99,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2                   &kp N3               &kp N4                   &kp N5  &tog 1                                                                                  &mo 3              &kp N6  &kp N7                     &kp N8                 &kp N9                     &kp N0         &kp MINUS
-&kp LCTRL  &kp Q      &kp W                    &kp F                &kp P                    &kp B   &sl 1                                                                                   &sl 2              &kp J   &kp L                      &kp U                  &kp Y                      &kp SEMICOLON  &mt RCTRL BSLH
-&kp LALT   &kp A      &hm_left LEFT_CONTROL R  &hm_left LEFT_ALT S  &hm_left LEFT_COMMAND T  &kp G   &kp LG(LC(Q))           &kp LEFT_ALT        &trans         &trans        &kp RIGHT_ALT  &kp RC(RG(SPACE))  &kp M   &hm_right RIGHT_COMMAND N  &hm_right RIGHT_ALT E  &hm_right RIGHT_CONTROL I  &kp O          &mt RALT SQT
-&kp LSHFT  &kp Z      &kp X                    &kp C                &kp D                    &kp V                                               &lt 1 TAB      &lt 1 ESCAPE                                    &kp K   &kp H                      &kp COMMA              &kp DOT                    &kp FSLH       &kp RIGHT_SHIFT
-&trans     &kp GRAVE  &kp CAPS                 &trans               &trans                           &favor_tap 1 BACKSPACE  &mt LEFT_SHIFT ESC  &trans         &trans        &lt 1 ENTER    &mt RSHIFT SPACE           &trans                     &trans                 &trans                     &trans         &trans
+&kp EQUAL  &kp N1     &kp N2                   &kp N3               &kp N4                   &kp N5  &tog 1                                                                         &mo 3              &kp N6  &kp N7                     &kp N8                 &kp N9                     &kp N0         &kp MINUS
+&trans     &kp Q      &kp W                    &kp F                &kp P                    &kp B   &sl 1                                                                          &sl 2              &kp J   &kp L                      &kp U                  &kp Y                      &kp SEMICOLON  &kp BSLH
+&trans     &kp A      &hm_left LEFT_CONTROL R  &hm_left LEFT_ALT S  &hm_left LEFT_COMMAND T  &kp G   &kp LG(LC(Q))           &kp LEFT_ALT        &trans      &trans  &kp RIGHT_ALT  &kp RC(RG(SPACE))  &kp M   &hm_right RIGHT_COMMAND N  &hm_right RIGHT_ALT E  &hm_right RIGHT_CONTROL I  &kp O          &kp SQT
+&trans     &kp Z      &kp X                    &kp C                &kp D                    &kp V                                               &trans      &trans                                    &kp K   &kp H                      &kp COMMA              &kp DOT                    &kp FSLH       &trans
+&trans     &kp GRAVE  &kp CAPS                 &trans               &trans                           &favor_tap 1 BACKSPACE  &mt LEFT_SHIFT ESC  &trans      &trans  &lt 1 ENTER    &mt RSHIFT SPACE           &trans                     &trans                 &trans                     &trans         &trans
             >;
         };
 
